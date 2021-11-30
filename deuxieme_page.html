@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Gateau au chocolat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- commande pour le responsive design afin d'adapter le contenu à tt sort d'ecran-->
+        <link rel="stylesheet" href="style.css"> <!-- pour faire l'appel de notre fichier css ok-->
+    </head>
+        <body>
+        <div class="description categorie"> <!-- ici on applique deux classe au mm div -->
+           <p class="paragraph1">Recette</p>
+        </div>
+        <div class="contenu">
+           <h1> Gateau au chocolat</h1> <br>
+
+           <div class="separateur"> </div> <!-- Pour creer une ligne entre deux paragraphe-->
+           <div class="description">
+                <p class="paragraph2"> "Ici je vais vous montrer l'un de mes recette préferée que j'aime le faire toujour. Je vous recommande 
+                  vivement de l'assayer"</p>
+            </div>
+
+            <div class="info"> <!-- Ici on a créer un div qui contien l'image et le tableau pour le repositionner ok-->
+                <img style= "display: block;" class="description" src="gateau.jpg"><!-- Pour importer une image de mm reportoir-->
+
+                <!--- Maintenant on va voir comment créer un tableau dans notre page web
+            
+                        tr: Table row (ligne)
+                        th: Table header (titres)
+                        td: Table data (données, cellule)
+                        border Pour avoir les ligne
+                                  -->
+                <table class="info"> <!-- on donne une position absolue à notre tableau afin que nous pouvons deplacer à l'interieur de la div-->
+                     <tr>
+                         <th>Difficulté</th>
+                         <th>Préparation</th>
+                         <th>Cuisson</th>
+                         <th>Température</th>
+                     </tr>
+                     <tr>
+                         <td>Facile</td>
+                         <td>10 min</td>
+                         <td>25 min</td>
+                         <td>35 min</td>
+                     </tr>           
+                 </table> 
+            </div>
+            <div class="colonne1 colonne">
+                <h2> Ingrédients</h2>
+                <div class="ingredient">
+                     <p><b>Chocolats noir : 200g</b></p> <!--Création d'une liste désordonné --->
+                     <p><b>Sucre : 100g</b></p>
+                     <p><b>Beure : 200g</b></p>
+                     <p><b>Oeufs : 4</b></p>
+                     <p><b>Farine : 80g</b></p>
+                </div>
+            </div>
+            <div class="colonne2 colonne">
+                <h2>Préparation</h2>
+                <table class="preparation"> <!-- Création d'une liste ordonné-->
+                     <tr><td><p class="numero">1</p></td><td class="prepa">Faire fondre le chocolat et le beure</td></tr>
+                     <tr><td><p class="numero">2</p></td><td class="prepa">Mélanger le sucre, les oeufs et la farine</td></tr>
+                     <tr><td><p class="numero">3</p></td><td class="prepa">Mélangé le tout pour faire une pâte</td></tr>
+                     <tr><td><p class="numero">4</p></td><td class="prepa">Mettre au four</td></tr>
+                </table>
+            </div>
+        </div>
+
+        </body>
+</html>

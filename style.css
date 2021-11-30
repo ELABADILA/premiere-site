@@ -1,0 +1,159 @@
+body {
+    background-color: #8BA1BB;
+    font-family: Arial; /* sélection le type d'écriture*/
+}
+p.paragraph1{
+ background-color: black;
+ color: white;
+ display: inline-block;
+ padding: 8px 18px; /* marge à l'inerieur de notre block*/
+ margin-bottom: 0;
+ font-weight: bold; /* mettre le text en gras */
+ font-size: 17px;  /* donner une taille au texte*/
+
+}
+div.contenu{
+ background-color: white;
+ margin: 0px 5% 40px 5%;
+ padding: 10px;
+ /*min-width: 350px;*/
+ box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* pour creer l'ombre à notre div*/
+}
+h1{
+ text-align: center;
+ margin-bottom: 12px;
+ margin-top: 10px;
+}
+p.paragraph2{
+ text-align: center;
+ max-width: 600px;
+ display: inline-block;
+ font-size: 12px;
+}
+.description{
+text-align: center;
+width: 100%; /* Pour force à centre l'image à l'interieur de notre dive ok */
+}
+div.categorie{
+ margin-bottom: -20px;
+ margin-top: 60px;
+}
+div.separateur{
+ width: 200px;
+ height: 2px;
+ background-color: black;
+ margin-right: auto;
+ margin-left: auto; /* Pour centre notre separateur en lui donne un margine automatique de gauche et du droite*/
+}
+div.info{
+position: relative;
+}
+table.info{
+position: absolute; 
+bottom:0%; 
+width: 100%; 
+color: white; 
+background-color: #6C829DC0;
+height: 40px;
+
+}
+table.info td { /* les textes dans les differents td seront centrer ok*/
+ text-align: center;
+ font-size: 10px;
+ vertical-align: top;
+}
+table.info th {
+ font-size: 13px;
+ vertical-align: bottom;
+}
+
+div.colonne{
+    width: 100%;
+    margin-top: 20px;
+}
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 5px solid #6C829D; /*pour créer un surligne au dessous de notre block*/
+    padding-bottom: 5px;
+
+}
+div.colonne1{
+    display: inline-block;
+}
+
+div.ingredient p{
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid lightgray;
+    padding: 8px 0; /* pour donner les marges interieur vertical et horizontal*/
+    margin-top: 3px;
+    margin-bottom: 0; /*pour éliminer l'espacement entre mes differente colone*/
+}
+table.preparation p.numero{ /* là en cible les paragraphe qui sont à l'interieur du table et qui possede la class numero*/
+    background-color: #6C829D;
+    color: white;
+    width: 25px; /* definir la largeur de notre carré*/
+    height: 25px;/*definir la hauteur de notre carré*/
+    text-align: center;
+    box-sizing: border-box; /* pour garder nos hauteur et largeur fixe*/
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%; /* pour avoir un cercle à partir d'un carré*/
+    margin: 0;
+
+}
+table.preparation td{
+    vertical-align: top;
+}
+
+table.preparation td.prepa{
+    font-size: 16px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+table.preparation tr{
+    height: 40px;   /*fixer la taille de la hauteur des lignes de la table*/
+}
+*{
+    overflow: auto;
+}
+/*Style pour ordinateur responsive design*/
+@media only screen and (min-width: 780px){
+    div.contenu{
+    min-width: 350px;
+    margin: 0px 10% 60px 10%;
+    padding: 30px;
+   }
+   table.info{
+    height: 70px;
+    
+    }
+    table.info td { /* les textes dans les differents td seront centrer ok*/
+     font-size: 14px;
+    }
+    table.info th {
+     font-size: 15px;
+    }
+    div.colonne{
+        width: 45%;
+    }
+    div.colonne2{
+        float: right;
+    }
+    div.colonne1{
+        margin-right: 10%;
+    }
+    p.paragraph2{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 900px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+    }
+}
